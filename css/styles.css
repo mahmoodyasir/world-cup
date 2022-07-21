@@ -1,0 +1,578 @@
+/* Imported Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Common Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0
+}
+
+.container {
+    margin-top: 40px;
+    width: 85%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Top Banner CSS */
+
+.top-banner {
+    background-color: #161616;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.banner-info {
+    padding: 150px 100px 0px 120px;
+    width: 531px;
+}
+
+.top-banner h1 {
+    line-height: 95%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 70px;
+    margin: 0;
+}
+
+.top-banner p {
+    color: #fff;
+}
+
+.top-banner {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.live-btn-div {
+    margin-top: 40px;
+}
+
+.live-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #DD0000;
+    padding: 16px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.live-btn:hover {
+    padding: 16px 35px;
+    transition: 0.4s;
+}
+
+.banner-image {
+    width: 100%;
+    animation: myfirst 5s 2;
+    animation-direction: alternate
+}
+
+@keyframes myfirst {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+}
+
+.banner-image img {
+    width: 95%;
+    height: 90%;
+    padding-top: 11%;
+    /* margin-top: 10%; */
+    /* height: 80%; */
+}
+
+
+/* ---------------
+Inner Blog CSS 
+-----------------*/
+
+.second-section {
+    margin-top: 6%;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: 320px repeat(1, 1fr);
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.blog-control {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    /* margin-left: 20px; */
+    max-height: 300px;
+}
+
+
+.blog-control a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    margin: 16px 10px;
+    border-radius: 10px;
+}
+
+#selected-btn {
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+
+.control-single-blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.single-blog {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(128, 128, 128, 0.2);
+    border-radius: 10px;
+}
+
+.single-blog>div>img {
+    width: 100%;
+}
+
+.blog-details {
+    padding: 10px;
+}
+
+.blog-details a {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px 16px;
+}
+
+.blog-details a:hover {
+    background-color: rgb(51, 100, 214);
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+.time,
+.comment {
+    display: flex;
+    padding-right: 25px;
+}
+
+.time p,
+.comment p {
+    padding-right: 10px;
+}
+
+.blog-info {
+    display: flex;
+}
+
+/* upcoming Match */
+
+.upcoming {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(128, 128, 128, 0.2);
+}
+
+.flag-compare h1 {
+    padding: 0px 15px;
+}
+
+.flag-compare {
+    display: flex;
+
+}
+
+.match-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Tablet Button */
+
+.tablet-btn {
+    display: none;
+}
+
+
+
+/*----------
+Footer Part 
+-----------*/
+
+footer {
+    margin-top: 8%;
+    height: 440px;
+    width: 100%;
+    background-color: #161616;
+    text-align: center;
+}
+
+footer h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.footer-header {
+    padding-top: 6%;
+}
+
+hr {
+    margin-top: 4%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+}
+
+.footer-link a {
+    color: #B9B9B9;
+    font-weight: 500;
+    text-decoration: none;
+    padding-right: 4%;
+}
+
+.fa-brands {
+    margin-top: 4%;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding-right: 2%;
+}
+
+/*-------------------- 
+Responsive Layout CSS 
+---------------------*/
+
+/* Mobile View */
+
+@media only screen and (max-width:688px) {
+
+    /* Top Banner Responsive CSS Code */
+    .container {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .top-banner {
+        background-color: #161616;
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .top-banner {
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-banner h1 {
+        line-height: 150%;
+        color: #fff;
+        font-weight: 700;
+        font-size: 45px;
+        margin: 0;
+    }
+
+    .banner-info {
+        padding: 40px 8px 0px 8px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .banner-image {
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    .banner-image img {
+        text-align: center;
+        width: 100%;
+        padding-top: 11%;
+    }
+
+    /* Blog Responsive CSS Code */
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        /* justify-content: space-between; */
+    }
+
+    .blog-control {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+
+    .blog-control a {
+        text-decoration: none;
+        border: 1px solid grey;
+        font-weight: 700;
+        color: black;
+        font-size: 20px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+    }
+
+    .control-single-blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .single-blog {
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid rgb(128, 128, 128, 0.2);
+        border-radius: 10px;
+    }
+
+    .blog-details a {
+        font-weight: 700;
+        font-size: 30px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 4px 16px;
+    }
+
+    .blog-details h3 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .time p,
+    .comment p {
+        padding-right: 10px;
+        font-size: 25px;
+    }
+
+    /* Footer Responsive CSS Code */
+
+    footer {
+        margin-top: 4%;
+        height: 500px;
+        width: 100%;
+        background-color: #161616;
+        text-align: center;
+    }
+
+    .footer-link a {
+        color: #B9B9B9;
+        font-weight: 500;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        /* padding-right: 4%; */
+    }
+}
+
+
+/* Tablet View */
+
+@media only screen and (min-width: 689px) and (max-width: 1024px) {
+
+    /* Top Banner Responsive CSS Code for Tablet */
+
+    .container {
+        margin-top: 40px;
+        width: 90%;
+        height: 30em;
+    }
+
+    .top-banner {
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+
+    .banner-info {
+        padding: 100px 0px 0px 50px;
+        width: 75%;
+    }
+
+    .top-banner h1 {
+        line-height: 95%;
+        color: #fff;
+        font-weight: 700;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .top-banner {
+        background-color: #161616;
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .banner-image img {
+        position: relative;
+        text-align: center;
+        width: 90%;
+        padding-top: 12%;
+    }
+
+    /* Blog Responsive CSS Code Tablet */
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        justify-content: space-between;
+    }
+
+    .blog-control {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+
+    .blog-control a {
+        display: inline;
+        width: 20%;
+        padding: 10px 20px;
+        white-space: nowrap;
+        text-decoration: none;
+        border: 1px solid grey;
+        font-weight: 700;
+        color: black;
+        font-size: 20px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+    }
+
+    .blog-control .control-long-text {
+        padding-right: 60px;
+    }
+
+    .control-single-blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .single-blog {
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid rgb(128, 128, 128, 0.2);
+        border-radius: 10px;
+    }
+
+    .blog-details a {
+        font-weight: 700;
+        font-size: 30px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 4px 16px;
+    }
+
+    .blog-details h3 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .time p,
+    .comment p {
+        padding-right: 10px;
+        font-size: 25px;
+    }
+
+    .tablet-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tablet-btn a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 12px 30px;
+        border-radius: 5px;
+        background-color: #DD0000;
+
+    }
+
+    /* Footer Responsive CSS */
+
+    footer {
+        margin-top: 180%;
+        height: 440px;
+        width: 100%;
+        background-color: #161616;
+        text-align: center;
+
+    }
+
+    hr {
+        margin-top: 4%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: 80%;
+        margin-bottom: 4%;
+    }
+
+    .footer-link a {
+        color: #B9B9B9;
+        font-weight: 500;
+        text-decoration: none;
+        padding-right: 4%;
+    }
+
+    .break-point::after {
+        content: "\a \a";
+        white-space: pre;
+    }
+
+
+}
